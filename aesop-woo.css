@@ -1,0 +1,54 @@
+.aesop-on-canvas.single-post #wrapper,
+.aesop-on-canvas.single-post .col-full{
+	max-width:100%;
+	padding-left:0;
+	padding-right:0;
+}
+
+.aesop-on-canvas.single-post #header.col-full,
+.aesop-on-canvas.single-post #navigation.col-full,
+.aesop-on-canvas.single-post #post-author,
+.aesop-on-canvas.single-post #footer.col-full,
+.aesop-on-canvas.single-post #footer-widgets,
+.aesop-on-canvas.single-post article header,
+.aesop-on-canvas.single-post article .post-meta,
+.aesop-on-canvas.single-post article .post-utility,
+.aesop-on-canvas.single-post .post-entries,
+.aesop-on-canvas.single-post .entry > *:not(.aesop-component){
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aesop-on-canvas.single-post #main article .scroll-nav__section {
+	max-width:100%;
+	padding-left:0;
+	padding-right:0;
+}
+
+/* specificity for timeline fixies*/
+.aesop-on-canvas.single-post .scroll-nav__section p,
+.aesop-on-canvas.single-post .scroll-nav__section h2,
+.aesop-on-canvas.single-post .scroll-nav__section h3,
+.aesop-on-canvas.single-post .scroll-nav__section h3,
+.aesop-on-canvas.single-post .scroll-nav__section h4,
+.aesop-on-canvas.single-post .scroll-nav__section h5,
+.aesop-on-canvas.single-post .scroll-nav__section h6,
+.aesop-on-canvas.single-post .scroll-nav__section ol,
+.aesop-on-canvas.single-post .scroll-nav__section ul {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* sticky maps tweaks */
+.aesop-on-canvas.aesop-sticky-map.aesop-sticky-map-left {
+	padding-left:270px;
+	padding-right:20px;
+}
+.aesop-on-canvas.aesop-sticky-map.aesop-sticky-map-right {
+	padding-right:270px;
+	padding-left:20px;
+}
