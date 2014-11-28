@@ -1,3 +1,12 @@
+/*
+*
+*	Here we're breaking the main columns width of the site, then on the next step we'll reset the width to items taht we specify
+*	This is the CSS method of getting full width components within a content width setup
+*
+*	Note: there are other methods of doing this, for example using calc() to set negative margins
+*
+*/
+
 .aesop-on-canvas.single-post #wrapper,
 .aesop-on-canvas.single-post .col-full{
 	max-width:100%;
@@ -5,6 +14,13 @@
 	padding-right:0;
 }
 
+/**
+*
+*	.aesop-content is applied to some components when user sets "content" width so must match site width
+*	Our two special selectors at the bottom, the first will set a width on any item within .entry that's not an aesop component
+*	The last special selector does the same thing, but within the chapter component because we wrap chapters in a scroll-nav__section
+*/
+.aesop-content,
 .aesop-on-canvas.single-post #header.col-full,
 .aesop-on-canvas.single-post #navigation.col-full,
 .aesop-on-canvas.single-post #post-author,
@@ -14,33 +30,23 @@
 .aesop-on-canvas.single-post article .post-meta,
 .aesop-on-canvas.single-post article .post-utility,
 .aesop-on-canvas.single-post .post-entries,
-.aesop-on-canvas.single-post .entry > *:not(.aesop-component){
+.aesop-on-canvas.single-post .entry > *:not(.aesop-component),
+.aesop-on-canvas.single-post .scroll-nav__section > *:not(.aesop-component){
     width: 100%;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/**
+*
+*	Because we're resetting our width on single posts, we have to force the chapter component sections to full width
+*
+*/
 .aesop-on-canvas.single-post #main article .scroll-nav__section {
 	max-width:100%;
 	padding-left:0;
 	padding-right:0;
-}
-
-/* specificity for timeline fixies*/
-.aesop-on-canvas.single-post .scroll-nav__section p,
-.aesop-on-canvas.single-post .scroll-nav__section h2,
-.aesop-on-canvas.single-post .scroll-nav__section h3,
-.aesop-on-canvas.single-post .scroll-nav__section h3,
-.aesop-on-canvas.single-post .scroll-nav__section h4,
-.aesop-on-canvas.single-post .scroll-nav__section h5,
-.aesop-on-canvas.single-post .scroll-nav__section h6,
-.aesop-on-canvas.single-post .scroll-nav__section ol,
-.aesop-on-canvas.single-post .scroll-nav__section ul {
-    width: 100%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* sticky maps tweaks */

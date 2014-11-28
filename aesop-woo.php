@@ -43,7 +43,7 @@ function aesop_woo_extended_styles(){
 add_filter('aesop_chapter_scroll_nav', 'aesop_woo_chapter_scroll_nav');
 function aesop_woo_chapter_scroll_nav($class){
 
-	$class = 'article header';
+	$class = '.post-meta';
 
 	return $class;
 }
@@ -55,7 +55,7 @@ function aesop_woo_chapter_scroll_nav($class){
 add_filter('aesop_chapter_scroll_container', 'aesop_woo_chapter_scroll_container');
 function aesop_woo_chapter_scroll_container($class){
 
-	$class = 'article';
+	$class = '.entry';
 
 	return $class;
 }
@@ -67,7 +67,7 @@ function aesop_woo_chapter_scroll_container($class){
 add_filter('aesop_timeline_scroll_container', 'aesop_woo_timeline_scroll_container');
 function aesop_woo_timeline_scroll_container($class){
 
-	$class = 'article';
+	$class = '.entry';
 
 	return $class;
 }
