@@ -13,9 +13,8 @@
 */
 
 
-
 // Set some constants
-define('AESOP_WOO_VERSION', '0.1');
+define('AESOP_WOO_VERSION', '0.9');
 define('AESOP_WOO_DIR', plugin_dir_path( __FILE__ ));
 define('AESOP_WOO_URL', plugins_url( '', __FILE__ ));
 
