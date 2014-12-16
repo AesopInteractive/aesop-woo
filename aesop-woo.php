@@ -2,7 +2,15 @@
 /**
 *
 *	Plugin Name: Aesop Woo
-*
+* 	Plugin URI:        https://github.com/aesopinteractive/aesop-woo
+* 	Description:       Open-sourced suite of components that empower interactive storytelling.
+* 	Version:           1.0
+* 	Author:            Nick Haskins
+* 	Author URI:        http://aesopstoryengine.com
+* 	License:           GPL-2.0+
+* 	License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+* 	GitHub Plugin URI: https://github.com/aesopinteractive/aesop-woo
+*   Github Branch:     dev
 */
 
 /*
@@ -14,7 +22,7 @@
 
 
 // Set some constants
-define('AESOP_WOO_VERSION', '0.9');
+define('AESOP_WOO_VERSION', '1.0');
 define('AESOP_WOO_DIR', plugin_dir_path( __FILE__ ));
 define('AESOP_WOO_URL', plugins_url( '', __FILE__ ));
 
@@ -33,18 +41,6 @@ function aesop_woo_assets(){
 add_action('after_setup_theme', 'aesop_woo_extended_styles');
 function aesop_woo_extended_styles(){
 	add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );
-}
-
-/**
-*
-*	Filter the class where the capter nav is placed
-*/
-add_filter('aesop_chapter_scroll_nav', 'aesop_woo_chapter_scroll_nav');
-function aesop_woo_chapter_scroll_nav($class){
-
-	$class = '.post-meta';
-
-	return $class;
 }
 
 /**
